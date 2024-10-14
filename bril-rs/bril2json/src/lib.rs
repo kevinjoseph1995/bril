@@ -46,7 +46,7 @@ enum ParsingArgs {
 }
 
 impl Lines {
-    fn new(input: &str, use_pos: bool, with_end: bool, src_name: Option<String>) -> Self {
+    pub fn new(input: &str, use_pos: bool, with_end: bool, src_name: Option<String>) -> Self {
         Self {
             use_pos,
             with_end,
